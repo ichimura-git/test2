@@ -1,0 +1,121 @@
+<%
+// meta
+title = 'contact';
+// Breadcrumb
+bread = '札幌中島公園';
+bread_sec = 'お申し込み/お問い合わせ';
+// lower page
+lower = 2;
+// flag
+flag = 'sapporo';
+%>
+<% include ../../common/_header %>
+<div class="row">
+    <aside class="sidemenu col-lg-3 col-md-12">
+        <ul>
+            <li class="li"><a href="#" class="li-h">お申し込み<br>お問い合わせ</a></li>
+            <li class="banner d-none d-lg-block"><a href="#"><img src="../../common/img/sapporo/beginner/kaigishitsu.png"></a></li>
+            <li class="banner d-none d-lg-block"><a href="#"><img src="../../common/img/sapporo/beginner/space-market.png"></a></li>
+            <li class="banner d-none d-lg-block"><a href="#"><img src="../../common/img/sapporo/beginner/instabase.png"></a></li>
+        </ul>
+    </aside><!-- /.side -->
+
+    <main class="main<% if(title == 'home') { %> main--home<% } %> col-lg-9 col-md-12">
+        <section class="main-section">
+            <h2>Application/Contact Us</h2>
+            <p class="subtitle">お申し込み/お問い合わせ</p>
+        </section>
+
+        <section>
+            <div class="clearfix">
+                <h3 class="title--beginner">お申し込み<span class="download"><a href="#">契約書フォーム ダウンロード(PDF)</a></span></h3>
+            </div>
+        </section>
+
+        <form action="sample.php" class="mb-4">
+            <div class="form-item clearfix"><p><label for="name">お名前</label></p>
+                <p><span class="text-danger">※</span><input type="text" id="name" placeholder="会議室　太郎"></p>
+            </div>
+            <div class="form-item clearfix"><p><label for="furigana">フリガナ</label></p>
+                <p><span class="text-danger">※</span><input type="text" id="furigana" placeholder="カイギシツ　タロウ"></p>
+            </div>
+            <div class="form-item clearfix"><p><label for="company-name">企業名</label></p>
+                <p><span class="text-danger">※</span><input type="text" id="company-name" placeholder="株式会社　会議室(屋号でも可)"></p>
+            </div>
+            <div class="form-item clearfix"><p><label for="address">ご住所</label></p>
+                <p><span class="text-danger">※</span><input type="text" id="address" placeholder="札幌市中央区南0条西0丁目1-2"></p>
+            </div>
+            <div class="form-item clearfix"><p><label for="mailaddress">e-mail</label></p>
+                <p><span class="text-danger">※</span><input type="email" id="mailaddress" placeholder="t-kaigishitsu@kaigishitsu.co.jp"></p>
+            </div>
+
+            <!--予約日時-->
+            <div class="yoyaku-item clearfix">
+
+                <p class="yoyaku-left"><label for="date-time">予約日時</label></p>
+
+                <div class="yoyaku-right">
+                    <p class="nitiji-1"><span class="text-danger">※</span><input type="text" id="date-time" class="datepicker yoyaku" value="2019/06/01"></p>
+
+                    <p class="nitiji-2"><input type="time" id="date-time" value="09:00" class="yoyaku2">
+                    </p>
+
+
+                    <!--日2つ目-->
+                    <p class="nitiji-1b"><span>～</span><input type="text" id="date-time" class="datepicker yoyaku" value="2019/06/01"></p>
+
+                    <p class="nitiji-2b"><input type="time" id="date-time" value="17:00" class="yoyaku">
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div class="form-item clearfix"><p><label for="room-number">会議室番号</label></p>
+                <p class="i-w"><span class="text-danger">※</span><input type="text" id="room-number" placeholder="504A室"></p>
+            </div>
+            <div class="form-item clearfix"><p><label for="telephone">ご連絡先</label></p>
+                <p><span class="text-danger">※</span><input type="tel" id="telephone" placeholder="011-000-0000"></p>
+            </div>
+            <div class="form-item clearfix"><p><label for="number">予定人数</label></p>
+                <p class="i-w"><span class="text-danger">※</span><input type="text" id="number" placeholder="20人"></p>
+            </div>
+            <div class="form-item clearfix"><p><label for="purpose">使用目的</label></p>
+                <p><span class="text-danger">※</span><textarea id="purpose" placeholder="会社の当日はオリエンテーションにて使用予定です。外部関係者も来ますので、当日は不特定多数の人間が出入りします。できればポットも貸して頂きたいのですが可能でしょうか？連絡はメールで、可否を教えて頂ければと思います。"></textarea></p>
+            </div>
+            <p class="clearfix"><button type="submit" class="button1 float-right">送信する</button></p>
+        </form>
+
+
+        <section class="contact-form">
+            <div class="clearfix">
+                <h3 class="title--beginner">お問い合わせ<span class="text-danger"><a href="tel:011-232-5508">TEL011-232-5508</a></span></h3></div>
+        </section>
+        <p class="describe">※北関東学院内</p>
+
+        <form action="sample.php">
+            <div class="form-item"><p><label for="name2">お名前</label></p>
+                <p><span class="text-danger">※</span><input type="text" id="name2" placeholder="会議室　太郎"></p>
+            </div>
+            <div class="form-item"><p><label for="furigana2">フリガナ</label></p>
+                <p><span class="text-danger">※</span><input type="text" id="furigana2" placeholder="カイギシツ　タロウ"></p>
+            </div>
+            <div class="form-item"><p><label for="company-name2">企業名</label></p>
+                <p><span class="text-danger">※</span><input type="text" id="company-name2" placeholder="株式会社　会議室(屋号でも可)"></p>
+            </div>
+            <div class="form-item clearfix"><p><label for="address2">ご住所</label></p>
+                <p><input type="text" id="address2" placeholder="札幌市中央区南0条西0丁目1-2"></p>
+            </div>
+            <div class="form-item clearfix"><p><label for="mailaddress">e-mail</label></p>
+                <p><input type="email" id="mailaddress" placeholder="t-kaigishitsu@kaigishitsu.co.jp"></p>
+            </div>
+            <div class="form-item"><p><label for="telephone2">ご連絡先</label></p>
+                <p><span class="text-danger">※</span><input type="tel" id="telephone2" placeholder="011-000-0000"></p>
+            </div>
+            <div class="form-item clearfix"><p><label for="contact">お問い合わせ内容</label></p>
+                <p><span class="text-danger">※</span><textarea id="contact" placeholder="お世話になります。○月○日の9:00〜21:00まで借りたいのですが、可能で
+					しょうか？その場合の延長時間の金額はおいくらになりますか？合わせて見積もりをメールで頂ければと思います。よろしくお願い致します。"></textarea></p></div>
+            <p><button type="submit" class="button2 float-right">送信する</button></p>
+        </form>
+</div>
+<% include ../../common/_footer %>

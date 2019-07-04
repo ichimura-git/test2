@@ -1,0 +1,36 @@
+/* ----------------------------------
+0.0 - variable
+---------------------------------- */
+
+$base-font-color: #656565;
+$title-font-color: #ca6070;
+$base-bg-color: #7AC943;
+
+/* ----------------------------------
+1.0 - Common
+---------------------------------- */
+
+@font-face {
+  font-family: 'Renner*';
+  src: url("../font/renner/Renner_ 400 Book.ttf");
+}
+
+html {
+  //font: 62.5%/1 sans-serif;
+  font-family: sans-serif;
+}
+
+body,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,p {
+  margin:0;
+  padding:0;
+}
+
+ul {
+  list-style:none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: bottom;
+}

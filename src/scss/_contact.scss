@@ -1,0 +1,140 @@
+/* ----------------------------------
+29.0 - Contact
+---------------------------------- */
+
+h3 > span {
+  float: right;
+  display: inline-block;
+  font-size: 1vw;
+  margin-top: 0.5%;
+  > a {
+    text-decoration: none;
+  }
+}
+
+.download {
+  margin-top: 1.8%;
+}
+
+.contact-form h3 span {
+  font-size: 1.8vw;
+  margin-bottom: 2.5%;
+  text-decoration: none;
+}
+
+section {
+  margin-bottom: 2%;
+}
+
+
+.form-item {
+  width: 100%;
+  margin-bottom: 1%;
+}
+
+.form-item p label {
+  float: left;
+  width: 15%;
+}
+
+.form-item p input {
+  float: right;
+  width: 80%;
+
+}
+
+.yoyaku-item {
+  width: 100%;
+  margin-bottom: 1%;
+}
+
+.yoyaku-item .yoyaku-left label {
+  float: left;
+  width: 15%;
+}
+
+.yoyaku-item .yoyaku-right p input {
+  float: right;
+  width:68%;
+}
+
+
+.yoyaku-right .nitiji-1 {
+  float: left;
+  width: 22%;
+  margin-left: -2%;
+  > span {
+    margin-left: 9%;
+  }
+}
+
+.yoyaku-right .nitiji-2 {
+  float: left;
+  width: 22%;
+  margin-left: -4%;
+}
+
+.yoyaku-right .nitiji-1b {
+  float: left;
+  width: 22%;
+}
+
+
+.yoyaku-right .nitiji-2b {
+  float: left;
+  width: 22%;
+  margin-left: -4%;
+}
+
+.nitiji-1b span {
+  position: relative;
+  top: -1%;
+  left: 1vw;
+  display: inline-block;
+  color: #000;
+}
+
+.form-item textarea {
+  float: right;
+  width: 80.3%;
+}
+
+.button1 {
+  width: 12vw;
+  height: 8vh;
+  top: 1vh;
+  left: 81%;
+  line-height: 20%;
+  background-color: #CCC;
+  border: none;
+  border-radius: 3%;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.2vw;
+}
+
+.button2 {
+  width: 12vw;
+  height: 8vh;
+  top: 12.1vh;
+  left: 81%;
+  line-height: 20%;
+  background-color: #CCC;
+  border: none;
+  border-radius: 3%;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.2vw;
+}
+
+.describe {
+  text-align: right;
+  margin-right: 1vw;
+}
+
+textarea {
+  float: right;
+  width: 70%;
+  height: 20vh;
+  font-size: 1.2vw;
+}

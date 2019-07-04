@@ -1,0 +1,156 @@
+/* ----------------------------------
+20.0 - Sapporo
+---------------------------------- */
+
+.viewer {
+  margin: 20px auto;
+  text-align: left;
+  overflow: hidden;
+  > ul {
+    width: 100%;
+    padding-top: 28%;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+    > li {
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: none;
+      position: absolute;
+      > a > img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* slider02 */
+
+.view__title {
+  width: 100%;
+  margin: 0.5vh auto 4vh;
+  padding: 0.3vw 0 0 0.6vw;
+  font-size: 1.5vw;
+  border-top: 2px double #000;
+  border-bottom: 2px double #000;
+  line-height: 1.6;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+.slideInner li a {
+  display: block;
+}
+
+.slide {
+  //height: 23vh;
+}
+
+.slideInner {
+  //height: 23vh;
+}
+
+
+
+.slider02 {
+  position:relative;
+  //overflow:hidden;
+  //padding:0 55px;
+  margin:0 auto;
+}
+
+.slider02 .slide {
+  position:relative;
+}
+
+.slider02 .slidePrev {
+  position:absolute;
+  width:45px;
+  height:45px;
+  top:50%;
+  left:-50px;
+  margin-top:-22.5px;
+  cursor:pointer;
+  z-index:100;
+  background:url(../img/sapporo/nav.png) -90px 50% no-repeat;
+}
+
+.slider02 .slidePrev:hover {
+  background:url(../img/sapporo/nav.png) -90px 50% no-repeat;
+}
+
+.slider02 .slidePrev.hidden {
+  cursor:default;
+  background:url(../img/sapporo/nav.png) -90px 50% no-repeat;
+}
+
+.slider02 .slideNext {
+  position:absolute;
+  display:block;
+  width:45px;
+  height:45px;
+  top:50%;
+  margin-top:-22.5px;
+  right:-50px;
+  cursor:pointer;
+  z-index:100;
+  background:url(../img/sapporo/nav.png) -225px 50% no-repeat;
+}
+
+.slider02 .slideNext:hover {
+  background:url(../img/sapporo/nav.png) -225px 50% no-repeat;
+}
+
+.slider02 .slideNext.hidden {
+  cursor:default;
+  background:url(../img/sapporo/nav.png) -225px 50% no-repeat;
+}
+
+.slider02 .slideInner {
+  overflow:hidden;
+  position:relative;
+  margin:0;
+  padding:0;
+}
+
+.slider02 .slideInner li {
+  box-sizing:border-box;
+  float:left;
+  width:26.6%;
+  margin:0;
+  padding:0 5px;
+  list-style:none;
+}
+
+.slider02 .slideInner li img {
+  width:100%;
+  margin:0;
+  padding:0;
+  border:0;
+  vertical-align:bottom;
+}
+
+.slider02 .controlNav {
+  position:relative;
+  float:left;
+  left:50%;
+  margin:10px 0;
+}
+
+.slider02 .controlNav span {
+  position:relative;
+  left:-50%;
+  float:left;
+  margin:5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  width:10px;
+  height:10px;
+  overflow:hidden;
+  text-indent:-9999px;
+  vertical-align:middle;
+  background:#ddd;
+}

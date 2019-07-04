@@ -1,0 +1,100 @@
+/* ----------------------------------
+5.0 - Side Column
+---------------------------------- */
+
+.sidemenu {
+  //width: 20%;
+  //margin-right: 50px;
+  .home &,
+  .sapporo & {
+    display: none;
+  }
+}
+
+.sidemenu ul .list {
+  margin-bottom: 20px;
+  background-color: #7AC943;
+  @media (max-width: 992px) {
+    margin-bottom: 10px;
+  }
+}
+
+.sidemenu ul .list a {
+  display: block;
+  padding: 8% 0 6% 0;
+  width: 100%;
+  font-size: 1.5vw;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 1.5;
+  @media (max-width: 992px) {
+    padding: 2% 0;
+  }
+}
+
+.sidemenu ul .list a:hover {
+  background-color: #FF931E;
+}
+
+
+.sidemenu ul {
+  //width: 80%;
+  list-style-type: none;
+}
+
+.sidemenu ul .li {
+  margin-bottom: 20px;
+  background-color: #7AC943;
+  @media (max-width: 992px) {
+    margin-bottom: 10px;
+  }
+}
+
+.sidemenu ul .li .li-h {
+  display: block;
+  padding: 8% 0 6% 0;
+  width: 100%;
+  font-size: 1.5vw;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 1.2;
+  @media (max-width: 992px) {
+    padding: 2% 0;
+  }
+}
+
+.sidemenu ul a.li-h:hover {
+  background-color: #FF931E;
+}
+
+.sidemenu ul li .li-h {
+  display:block;
+  line-height: 1;
+}
+
+
+.sidemenu ul .banner a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+
+
+
+.sidemenu ul .banner {
+  margin-bottom: 4.5%;
+}
+
+.sidemenu ul .banner a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+
+.sidemenu ul .banner {
+  margin-bottom: 4.5%;
+}

@@ -1,0 +1,86 @@
+/* ----------------------------------
+2.5 - Main Photo
+---------------------------------- */
+
+.mainphoto {
+  display: none;
+  width: 100%;
+  height: 57vh;
+  margin-bottom: 3rem;
+  max-height: 30%;
+  padding-top: 7vh;
+  background-image: url("../img/home/photo1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .home & {
+    display: block;
+  }
+}
+
+.maincontents {
+  background: white;
+  display: flex;
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+}
+
+.mainleft {
+  width: 52%;
+  padding: 2.5vw 0 1vw 6vw;
+  > p {
+    font-size: 3.3vw;
+    font-weight: bold;
+    margin-bottom: 1vw;
+    &:first-child:first-letter {
+      font-size: 5.5vw;
+      color: #0066CC;
+    }
+    > span:nth-child(2n) {
+      font-size: 5.5vw;
+      color: #e63a18;
+    }
+    &:nth-child(2n) {
+      margin-left: -2.5vw;
+      font-size: 5.5vw;
+      font-weight: bold;
+      line-height: 1.3;
+    }
+    &:nth-child(3){
+      font-size: 3vw;
+      font-weight: bold;
+      letter-spacing: 0.3vw;
+    }
+  }
+}
+
+.mainright {
+  width: 48%;
+  padding: 1vw 6vw 1vw 0;
+  font-size: 1.2vw;
+  line-height: 1.6;
+  > p:nth-child(2) {
+    margin-bottom: 1rem;
+  }
+}
+
+.image-item {
+  display: flex;
+  display: inline-block;
+  margin-bottom: 0.2vh;
+}
+
+.image-item > img {
+  display: inline-block;
+  width: 9vw;
+
+}
+
+.image-item > img:nth-child(2n) {
+  margin-left:7vw;
+  margin-right:7vw;
+  @media (max-width: 550px) {
+    margin: 0 4vw;
+  }
+}

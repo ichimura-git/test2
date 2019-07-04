@@ -1,0 +1,56 @@
+<%
+// meta
+title = 'access';
+// Breadcrumb
+bread = '名古屋今池';
+bread_sec = 'アクセス';
+// lower page
+lower = 2;
+// flag
+flag = 'nagoya';
+// keywords
+keywords = '札幌,北海道,貸会議室,貸し会議室,レンタル会議室,レンタルスペース,レンタル,会議室,格安';
+// description
+description = '札幌で土日の格安貸し会議室なら、「週末会議室」がお得です。札幌最安値で備品込みの金額なのでわかりやすい料金体系が魅力で、中小企業様のセミナーや勉強会、面接などにも有効な手段としてお気軽にご活用ください。';
+%>
+<% include ../../common/_header %>
+<div class="row">
+    <aside class="sidemenu col-lg-3 col-md-12">
+        <ul>
+            <li class="list"><a href="#">アクセス</a></li>
+            <li class="banner d-none d-lg-block"><a href="#"><img src="../../common/img/sapporo/beginner/kaigishitsu.png"></a></li>
+            <li class="banner d-none d-lg-block"><a href="#"><img src="../../common/img/sapporo/beginner/space-market.png"></a></li>
+            <li class="banner d-none d-lg-block"><a href="#"><img src="../../common/img/sapporo/beginner/instabase.png"></a></li>
+        </ul>
+    </aside><!-- /.side -->
+
+    <main class="main<% if(title == 'home') { %> main--home<% } %> col-lg-9 col-md-12">
+        <section class="main-section">
+            <h2>Access</h2>
+            <p class="subtitle">アクセス</p>
+        </section>
+
+        <section>
+            <h3 class="title--beginner">アクセス</h3>
+            <div class="main-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.526640178897!2d136.93636051524487!3d35.16842438031696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003708b1a06962d%3A0x257149005ce06f5d!2z55Kw5aKD44Kt44Oj44Oq44Ki44Kr44Os44OD44K45ZCN5Y-k5bGL5qCh!5e0!3m2!1sja!2sjp!4v1561367629995!5m2!1sja!2sjp" width="100%" height="" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="foot-map">
+                <div class="row">
+                    <div class="col-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1561368123425!6m8!1m7!1sFEbr7s0uLf6WPlK_m5XQhg!2m2!1d35.16841488922306!2d136.9384073325812!3f78.38058557638566!4f1.8772104461824028!5f0.7820865974627469" width="100%" height="" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-6">
+                        <address>
+                            <div>
+                                <p>〒464-0850</p>
+                                <p>愛知県名古屋市千種区今池5丁目3番2号　GS今池ビル8階</p>
+                            </div>
+                            <img src="../../common/img/nagoya/access/access-image.png" alt="">
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </section>
+</div>
+<% include ../../common/_footer %>

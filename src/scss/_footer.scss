@@ -1,0 +1,24 @@
+/* ----------------------------------
+6.0 - Footer
+---------------------------------- */
+
+.smooth {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  > a {
+    display: inline-block;
+    > img {
+      width: 4vw;
+    }
+  }
+}
+
+.footer__copyright {
+  color: $base-font-color;
+  line-height: 50px;
+  text-align: center;
+  @media (max-width: 640px) {
+    line-height: 1.5;
+  }
+}

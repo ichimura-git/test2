@@ -1,0 +1,130 @@
+/* ----------------------------------
+23.0 - Beginner
+---------------------------------- */
+
+.main-section {
+  > h2 {
+    color: #FFFFFF;
+    background-color: #7AC943;
+    margin-bottom: 1px;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 2.2vw;
+    font-family: 'Renner*';
+    font-weight: 400;
+  }
+}
+
+
+.subtitle {
+  color: #FFFFFF;
+  background-color: #7AC943;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.4vw;
+  line-height: 1.5;
+}
+
+.title--beginner {
+  font-size: 1.8vw;
+  font-weight: bold;
+  padding: 0 0 5px 5px;
+  border-left: 5px solid #FF7BAC;
+  border-bottom: 1px solid #FF7BAC;
+  margin-bottom: 1%;
+}
+
+.text--beginner {
+  font-size: 1.6vw;
+  line-height: 1.5;
+  margin-bottom: 1.6vw;
+}
+
+
+.list-image {
+  font-size: 1.4vw;
+  margin-bottom: 1.4vh;
+  > li {
+    line-height: 1.5;
+    list-style: none;
+    margin-left: 0;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 0.3em;
+      height: 0.3em;
+      margin-right: 0.2em;
+      background: #FF931E ;
+      transform: rotate(45deg);
+      vertical-align: 14%;
+    }
+  }
+}
+
+.list-image2 {
+  font-size: 1.4vw;
+  > li {
+    line-height: 1.5;
+    list-style: none;
+    margin-bottom: 0.5vh;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 0.5em;
+      height: 0.5em;
+      margin-right: 0.2em;
+      background: #FF931E;
+      transform: rotate(45deg);
+      vertical-align: 14%;
+    }
+  }
+}
+
+.condition {
+  margin-bottom: 4vh;
+}
+
+.condition__list {
+  margin-bottom: 1.6vh;
+  > .disc {
+    font-size: 1.4vw;
+    list-style: disc;
+    line-height: 1.5;
+    margin: 0 0 0 3.6vw;
+  }
+}
+
+.foot-p {
+  font-size: 1.1vw;
+  margin-bottom: 2.4vh;
+}
+
+.use {
+  margin-bottom: 4vh;
+}
+
+.yajirusi {
+  margin: 0 0 1.4vh 13vw;
+  > img {
+    width: 10vw;
+    height: auto;
+  }
+}
+
+.payment {
+  margin-bottom: 4vh;
+  .l-ul {
+    font-size: 1.4vw;
+    margin-bottom: 1.4vh;
+    > li {
+      line-height: 1.5;
+      list-style: disc;
+      margin-left: 1.6rem;
+    }
+  }
+}
+
+.text--bring {
+  font-size: 1.4vw;
+  line-height: 1.5;
+}

@@ -1,0 +1,51 @@
+/* ----------------------------------
+28.0 - Access
+---------------------------------- */
+
+.main-map {
+  margin-bottom: 20px;
+  > iframe {
+    height: 50vh;
+    margin-top: 2%;
+  }
+}
+
+.foot-map iframe {
+  height: 30vh;
+}
+
+/*
+.foot-map {
+  display: flex;
+  margin-top: 1%;
+}
+
+.foot-map iframe {
+  width: 33vw;
+  height: auto;
+}
+
+.foot-map address {
+  width: 20vw;
+  height: auto;
+  margin-left: 3%;
+  margin-top: 3%;
+  font-style: normal;
+}
+
+address div {
+  width: 33vw;
+  height: auto;
+  margin-top: 6vh;
+  font-size: 1.45vw;
+  line-height: 1;
+}
+
+
+
+address img {
+  display: inline-block;
+  width: 30vw;
+  height: auto;
+  margin-top: 9%;
+}*/

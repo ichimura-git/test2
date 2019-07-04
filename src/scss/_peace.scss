@@ -1,0 +1,48 @@
+/* ----------------------------------
+22.0 - Peace of mind
+---------------------------------- */
+
+.title--beginner {
+  > .font {
+    font-weight: 200;
+    font-size: 1.4vw;
+  }
+}
+
+ol {
+  font-size: 1.5vw;
+}
+
+.bold {
+  font-weight: bold;
+  margin-top: 1vh;
+  margin-left: 2vw;
+}
+
+.peace__flex {
+  display: flex;
+  > ul {
+    background: url("../img/sapporo/peace/toukatu.png") no-repeat right;
+    margin-right: 15px;
+    padding: 10px 45px 0 0;
+    @media (max-width: 574px) {
+      margin-right: 10px;
+    }
+    > li {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      margin-bottom: 10px;
+      @media (max-width: 768px) {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+.icon-p {
+  width: 50%;
+  margin-top: 4%;
+  margin-left: 0;
+  color: red;
+  font-size: 1.4vw;
+}

@@ -1,0 +1,32 @@
+/* ----------------------------------
+10.0 - Etc
+---------------------------------- */
+
+.btm5 {  margin-bottom: 5px;}
+.btm20 {  margin-bottom: 20px;}
+.btm30 {  margin-bottom: 30px;}
+.btm50 {  margin-bottom: 50px;}
+.btm70 {  margin-bottom: 70px;}
+.btm100 {   margin-bottom: 100px; }
+
+.lft15 {  margin-left: 15px;}
+
+.t-center {  text-align: center;}
+.t-center--sp {
+  @media (max-width: 640px) {
+    text-align: center;
+  }
+}
+.t-right {  text-align: right;}
+
+.text--bold {
+  font-weight: bold;}
+
+.fz14 {  font-size: 1.4rem;}
+
+.fc-base {  color: $title-font-color; }
+
+.bg-navbar {
+  background: $base-bg-color;
+}
+
