@@ -11,9 +11,10 @@ flag = 'sapporo';
 keywords = '札幌,貸会議室,格安';
 // description
 description = '札幌で土日の格安貸し会議室なら、格安の「週末会議室」！地下鉄中島公園駅から徒歩１分で交通の利便性も抜群です。中小企業様や個人事業主様のセミナーやミーティング、面接などにも有効な手段としてぜひお気軽にご活用ください。';
+page_title = 'sapporo_home';
 %>
 <% include ../common/_header %>
-<main class="main<% if(title == 'home') { %> main--home<% } %>">
+<main class="main<% if(page_title === 'sapporo_home') { %> main--home<% } %>">
     <div class="viewer">
         <ul>
             <li><a href="info/"><img src="../common/img/sapporo/index/top_pic_01.png" alt="札幌最安値の貸会議室"></a></li>
@@ -21,7 +22,6 @@ description = '札幌で土日の格安貸し会議室なら、格安の「週�
             <li><a href="https://twitter.com/sapporonakajima" target="_blank"><img src="../common/img/sapporo/index/top_pic_03.png" alt="週末会議室twitter"></a></li>
         </ul>
     </div><!--/.viewer-->
-    </div>
 
 <div class="container-fluid">
 <section class="view">

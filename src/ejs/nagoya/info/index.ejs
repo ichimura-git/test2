@@ -12,6 +12,7 @@ flag = 'nagoya';
 keywords = '名古屋,貸会議室,格安';
 // description
 description = '名古屋で土日の格安貸し会議室なら、格安の「週末会議室」！わかりやすい料金体系が魅力の一つで、突然のご利用にもレスポンス良く対応させていただきます。1日・午前・午後の３種類の料金体系で備品も全て込みとなっておりますので、お気軽にご利用ください。';
+page_title = 'information';
 %>
 <% include ../../common/_header %>
 <div class="row">
@@ -31,7 +32,7 @@ description = '名古屋で土日の格安貸し会議室なら、格安の「�
     </ul>
 </aside><!-- /.side -->
 
-<main class="main<% if(title == 'home') { %> main--home<% } %> col-lg-9 col-md-12">
+    <main class="main<% if(page_title === 'home') { %> main--home<% } %> col-lg-9 col-md-12">
     <section class="main-section">
         <h2>Facility information/Fee</h2>
         <p class="subtitle">施設案内/料金</p>

@@ -12,6 +12,7 @@ flag = 'sapporo';
 keywords = '札幌,貸会議室,格安';
 // description
 description = '札幌で土日の格安貸し会議室なら、格安の「週末会議室」！わかりやすい料金体系と10室の会議室をご用意しておりますので、突然のご利用にもレスポンス良く対応させていただきます。また、1日・午前・午後の３種類の料金体系で備品も全て込みとなっておりますので、お気軽にご利用ください。';
+page_title = 'information';
 %>
 <% include ../../common/_header %>
 <div class="row">
@@ -35,7 +36,7 @@ description = '札幌で土日の格安貸し会議室なら、格安の「週�
     </ul>
 </aside><!-- /.side -->
 
-<main class="main<% if(title == 'home') { %> main--home<% } %> col-lg-9 col-md-12">
+<main class="main<% if(page_title === 'home') { %> main--home<% } %> col-lg-9 col-md-12">
     <section class="main-section">
         <h2>Facility information/Fee</h2>
         <p class="subtitle">施設案内/料金</p>

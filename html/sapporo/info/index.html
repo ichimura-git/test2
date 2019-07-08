@@ -12,6 +12,47 @@
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
     
+        <script src="../common/js/jquery.carousel.js"></script>
+        <script type="text/javascript">
+            $(function($) {
+                $('.slider02').carousel({
+                    touch         : true,
+                    touchDistance : '80',
+                    autoSlide     : true,
+                    repeat        : true,
+                    imgHoverStop  : false,
+                    navHoverStop  : false,
+                    interval      : 3000,
+                    duration      : 500,
+                    easing        : 'swing',
+                    viewSlide     : 3,
+                    skip          : true,
+                    responsive    : true,
+                    breakpoint    : [{'width':479, 'viewSlide':1},
+                        {'width':767, 'viewSlide':2},
+                        {'width':1023, 'viewSlide':3}]
+                });
+            });
+        </script>
+    
+    
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(function(){
+            $('.slick01').slick({autoplay: true,dots: true,});
+            $('.slick02').slick({autoplay: true,dots: true,});
+            $('.slick03').slick({autoplay: true,dots: true,});
+            $('.slick04').slick({autoplay: true,dots: true,});
+            $('.slick05').slick({autoplay: true,dots: true,});
+            $('.slick06').slick({autoplay: true,dots: true,});
+            $('.slick07').slick({autoplay: true,dots: true,});
+            $('.slick08').slick({autoplay: true,dots: true,});
+            $('.slick09').slick({autoplay: true,dots: true,});
+            $('.slick10').slick({autoplay: true,dots: true,});
+        });
+    </script>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
@@ -28,7 +69,7 @@
         gtag('config', 'UA-141689948-1');
     </script>
 </head>
-<body class="施設案内" id="index">
+<body class="information" id="index">
 <nav class="navbar navbar-expand-lg navbar-dark bg-navbar">
     <div class="container">
         <a class="navbar-brand" href="../../">
@@ -80,7 +121,7 @@
             <li class="nav__item"><a href="../../sapporo/" >TOP</a></li>
             <li class="nav__item"><a href="../../sapporo/beginner/" >初めての方</a></li>
             <li class="nav__item"><a href="../../sapporo/peace/" >安心のヒミツ</a></li>
-            <li class="nav__item"><a href="../../sapporo/info/" >施設案内/料金</a></li>
+            <li class="nav__item"><a href="../../sapporo/info/" class="active">施設案内/料金</a></li>
             <li class="nav__item"><a href="../../sapporo/utilization/" >活用イメージ</a></li>
             <li class="nav__item"><a href="../../sapporo/access/" >アクセス</a></li>
             <li class="nav__item"><a href="../../sapporo/contact/" >申し込み/お問い合わせ</a></li>
@@ -243,6 +284,50 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+
+    <script>
+        $(function() {
+            $("#btn li a").on('click', function(){
+                $("#btn li a").each(function(){
+                    if($("#btn li a").hasClass('active')) {
+                        $("#btn li a").removeClass('active');
+                    }
+                });
+                $(".area > p").each(function(){
+                    if($(".area > p").hasClass('active')) {
+                        $(".area > p").removeClass('active');
+                    }
+                });
+                let slider01 = $('.slider01').slick();
+                let slider02 = $('.slider02').slick();
+                let slider03 = $('.slider03').slick();
+                let slider04 = $('.slider04').slick();
+                let slider05 = $('.slider05').slick();
+                let slider06 = $('.slider06').slick();
+                let slider07 = $('.slider07').slick();
+                let slider08 = $('.slider08').slick();
+                let slider09 = $('.slider09').slick();
+                let slider10 = $('.slider10').slick();
+                let num = $("#btn li a").index(this);
+                $(".area > p").eq(num).addClass('active');
+                $(this).addClass('active');
+                $("#slide .slick-slider").fadeOut();
+                $("#slide .slick-slider").eq(num).fadeIn(1000, function () {
+                    slider01.slick('setPosition');
+                    slider02.slick('setPosition');
+                    slider03.slick('setPosition');
+                    slider04.slick('setPosition');
+                    slider05.slick('setPosition');
+                    slider06.slick('setPosition');
+                    slider07.slick('setPosition');
+                    slider08.slick('setPosition');
+                    slider09.slick('setPosition');
+                    slider10.slick('setPosition');
+                });
+                return false;
+            });
+        });
+    </script>
 
 <script src="../../common/js/functions.js"></script>
 </body>

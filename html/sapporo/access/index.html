@@ -12,6 +12,29 @@
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
     
+        <script src="../common/js/jquery.carousel.js"></script>
+        <script type="text/javascript">
+            $(function($) {
+                $('.slider02').carousel({
+                    touch         : true,
+                    touchDistance : '80',
+                    autoSlide     : true,
+                    repeat        : true,
+                    imgHoverStop  : false,
+                    navHoverStop  : false,
+                    interval      : 3000,
+                    duration      : 500,
+                    easing        : 'swing',
+                    viewSlide     : 3,
+                    skip          : true,
+                    responsive    : true,
+                    breakpoint    : [{'width':479, 'viewSlide':1},
+                        {'width':767, 'viewSlide':2},
+                        {'width':1023, 'viewSlide':3}]
+                });
+            });
+        </script>
+    
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
@@ -28,7 +51,7 @@
         gtag('config', 'UA-141689948-1');
     </script>
 </head>
-<body class="アクセス" id="index">
+<body class="access" id="index">
 <nav class="navbar navbar-expand-lg navbar-dark bg-navbar">
     <div class="container">
         <a class="navbar-brand" href="../../">
@@ -82,7 +105,7 @@
             <li class="nav__item"><a href="../../sapporo/peace/" >安心のヒミツ</a></li>
             <li class="nav__item"><a href="../../sapporo/info/" >施設案内/料金</a></li>
             <li class="nav__item"><a href="../../sapporo/utilization/" >活用イメージ</a></li>
-            <li class="nav__item"><a href="../../sapporo/access/" >アクセス</a></li>
+            <li class="nav__item"><a href="../../sapporo/access/" class="active">アクセス</a></li>
             <li class="nav__item"><a href="../../sapporo/contact/" >申し込み/お問い合わせ</a></li>
         </ul>
     </nav><!-- /.nav -->
