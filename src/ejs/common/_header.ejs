@@ -74,6 +74,7 @@
         <a class="navbar-brand" href="<% if(lower===1) { %>../<% }else if(lower===2){ %>../../<% }else if(lower===3){ %>../../../<% } %>">
             <img src="<% if(lower===1) { %>../<% }else if(lower===2){ %>../../<% }else if(lower===3){ %>../../../<% } %>common/img/home/rogo.svg" alt="">
         </a>
+        <% if(flag !== '') { %>
         <div class="sns-icon">
             <ul class="sns-icon__list">
                 <li class="sns-icon__item">
@@ -88,6 +89,7 @@
                 </li>
             </ul>
         </div>
+        <% } %>
         <% if(page_title!=='home') { %>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
