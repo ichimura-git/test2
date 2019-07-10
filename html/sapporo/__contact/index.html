@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact | 週末会議室</title>
     <meta name="keywords" content="札幌,貸会議室,格安">
-    <meta name="description" content="札幌で土日の格安貸し会議室なら、格安の「週末会議室」！10室の会議室から選択可能で、中小企業様や個人事業主様のセミナー・ミーティングなどに最適です。備品込みのわかりやすい料金体系も魅力の一つです。">
+    <meta name="description" content="札幌で土日の格安貸し会議室なら、格安の「週末会議室」！わかりやすい料金体系と10室の会議室をご用意しておりますので、突然のご利用にもレスポンス良く対応させていただきます。また、1日・午前・午後の３種類の料金体系で備品も全て込みとなっておりますので、お気軽にご利用ください。">
     <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -36,6 +36,24 @@
         </script>
     
     
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(function(){
+            $('.slick01').slick({autoplay: true,dots: true,});
+            $('.slick02').slick({autoplay: true,dots: true,});
+            $('.slick03').slick({autoplay: true,dots: true,});
+            $('.slick04').slick({autoplay: true,dots: true,});
+            $('.slick05').slick({autoplay: true,dots: true,});
+            $('.slick06').slick({autoplay: true,dots: true,});
+            $('.slick07').slick({autoplay: true,dots: true,});
+            $('.slick08').slick({autoplay: true,dots: true,});
+            $('.slick09').slick({autoplay: true,dots: true,});
+            $('.slick10').slick({autoplay: true,dots: true,});
+        });
+    </script>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-lightness/jquery-ui.css">
@@ -51,14 +69,28 @@
         gtag('config', 'UA-141689948-1');
     </script>
 </head>
-<body class="utilization" id="index">
+<body class="information" id="index">
 <nav class="navbar navbar-expand-lg navbar-dark bg-navbar">
     <div class="container">
         <a class="navbar-brand" href="../../">
             <img src="../../common/img/home/rogo.svg" alt="">
         </a>
+        <div class="sns-icon">
+            <ul class="sns-icon__list">
+                <li class="sns-icon__item">
+                    <a href="https://twitter.com/sapporonakajima" target="_blank">
+                        <i class="fab fa-3x fa-twitter-square"></i>
+                    </a>
+                </li>
+                <li class="sns-icon__item">
+                    <a href="https://www.instagram.com/sapporonakajima/" target="_blank">
+                        <i class="fab fa-3x fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
         
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
         
@@ -103,8 +135,8 @@
             <li class="nav__item"><a href="../../sapporo/" >TOP</a></li>
             <li class="nav__item"><a href="../../sapporo/beginner/" >初めての方</a></li>
             <li class="nav__item"><a href="../../sapporo/peace/" >安心のヒミツ</a></li>
-            <li class="nav__item"><a href="../../sapporo/info/" >施設案内/料金</a></li>
-            <li class="nav__item"><a href="../../sapporo/utilization/" class="active">活用イメージ</a></li>
+            <li class="nav__item"><a href="../../sapporo/info/" class="active">施設案内/料金</a></li>
+            <li class="nav__item"><a href="../../sapporo/utilization/" >活用イメージ</a></li>
             <li class="nav__item"><a href="../../sapporo/access/" >アクセス</a></li>
             <li class="nav__item"><a href="../../sapporo/contact/" >申し込み/お問い合わせ</a></li>
         </ul>
@@ -253,6 +285,50 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+
+    <script>
+        $(function() {
+            $("#btn li a").on('click', function(){
+                $("#btn li a").each(function(){
+                    if($("#btn li a").hasClass('active')) {
+                        $("#btn li a").removeClass('active');
+                    }
+                });
+                $(".area > p").each(function(){
+                    if($(".area > p").hasClass('active')) {
+                        $(".area > p").removeClass('active');
+                    }
+                });
+                let slider01 = $('.slider01').slick();
+                let slider02 = $('.slider02').slick();
+                let slider03 = $('.slider03').slick();
+                let slider04 = $('.slider04').slick();
+                let slider05 = $('.slider05').slick();
+                let slider06 = $('.slider06').slick();
+                let slider07 = $('.slider07').slick();
+                let slider08 = $('.slider08').slick();
+                let slider09 = $('.slider09').slick();
+                let slider10 = $('.slider10').slick();
+                let num = $("#btn li a").index(this);
+                $(".area > p").eq(num).addClass('active');
+                $(this).addClass('active');
+                $("#slide .slick-slider").fadeOut();
+                $("#slide .slick-slider").eq(num).fadeIn(1000, function () {
+                    slider01.slick('setPosition');
+                    slider02.slick('setPosition');
+                    slider03.slick('setPosition');
+                    slider04.slick('setPosition');
+                    slider05.slick('setPosition');
+                    slider06.slick('setPosition');
+                    slider07.slick('setPosition');
+                    slider08.slick('setPosition');
+                    slider09.slick('setPosition');
+                    slider10.slick('setPosition');
+                });
+                return false;
+            });
+        });
+    </script>
 
 <script src="../../common/js/functions.js"></script>
 </body>

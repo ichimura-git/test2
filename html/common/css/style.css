@@ -75,7 +75,7 @@ img {
 }
 
 .navbar-brand {
-  margin-right: 0;
+  margin-right: auto;
 }
 
 @media (max-width: 480px) {
@@ -107,7 +107,7 @@ img {
   display: none;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .navbar-hidden {
     display: block;
   }
@@ -201,6 +201,30 @@ img {
 
 .drawer-menu > li > a {
   color: white;
+}
+
+.sns-icon {
+  margin-right: 15px;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .sns-icon {
+    display: block;
+  }
+}
+
+.sns-icon__list {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sns-icon__item > a {
+  color: white;
+}
+
+.sns-icon__item:first-child {
+  margin-right: 10px;
 }
 
 /* ----------------------------------
