@@ -90,6 +90,12 @@
   }
 }
 
+.navbar>.container, .navbar>.container-fluid {
+  @media (max-width: 500px) {
+    flex-wrap: nowrap;
+  }
+}
+
 .drawer-nav {
   background: #cfcfcf;
   display: none;

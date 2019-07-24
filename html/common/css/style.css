@@ -3,7 +3,7 @@
 1.0 - Common
 2.0 - Header
 2.5 - Main Photo
-3.0 - 2019_01IT/php/2019_0517
+3.0 - Nav
 4.0 - Main Contents
 5.0 - Side Column
 6.0 - Footer
@@ -177,6 +177,13 @@ img {
 @media (max-width: 768px) {
   .nav {
     display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar > .container, .navbar > .container-fluid {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
 }
 
@@ -520,8 +527,18 @@ img {
   width: 4vw;
 }
 
+.footer {
+  background-color: #7AC943;
+  padding-top: 20px;
+}
+
+.footer__item > a {
+  color: white;
+  font-size: 0.9rem;
+}
+
 .footer__copyright {
-  color: #656565;
+  color: white;
   line-height: 50px;
   text-align: center;
 }
@@ -735,6 +752,11 @@ img {
   text-indent: -9999px;
   vertical-align: middle;
   background: #ddd;
+}
+
+.container.no-padding {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* ----------------------------------

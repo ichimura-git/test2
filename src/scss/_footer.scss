@@ -14,8 +14,18 @@
   }
 }
 
+.footer {
+  background-color: #7AC943;
+  padding-top: 20px;
+}
+
+.footer__item > a {
+  color: white;
+  font-size: 0.9rem;
+}
+
 .footer__copyright {
-  color: $base-font-color;
+  color: white;
   line-height: 50px;
   text-align: center;
   @media (max-width: 640px) {

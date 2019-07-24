@@ -199,22 +199,22 @@
 <% } %>
 
 <% if(lower >= 1) { %>
-<div class="container">
-<div class="breadcrumb">
-    <ul class="breadcrumb__list">
-        <li class="breadcrumb__item"><a href="<% if(lower===1) { %>../<% }else if(lower===2){ %>../../<% }else if(lower===3){ %>../../../<% } %>">週末会議室</a></li>
-        <% if(lower == 1) { %>
-            <li class="breadcrumb__item"><%= bread %></li>
-        <% } else if(lower == 2) { %>
-            <li class="breadcrumb__item"><a href="../"><%= bread %></a></li>
-            <li class="breadcrumb__item"><%= bread_sec %></li>
-        <% } else { %>
-            <li class="breadcrumb__item"><a href="../../"><%= bread %></a></li>
-            <li class="breadcrumb__item"><a href="../"><%= bread_sec %></a></li>
-            <li class="breadcrumb__item"><%= bread_thi %></li>
-        <% } %>
-    </ul>
-</div>
+<div class="container my-4">
+    <div class="breadcrumb">
+        <ul class="breadcrumb__list">
+            <li class="breadcrumb__item"><a href="<% if(lower===1) { %>../<% }else if(lower===2){ %>../../<% }else if(lower===3){ %>../../../<% } %>">週末会議室</a></li>
+            <% if(lower == 1) { %>
+                <li class="breadcrumb__item"><%= bread %></li>
+            <% } else if(lower == 2) { %>
+                <li class="breadcrumb__item"><a href="../"><%= bread %></a></li>
+                <li class="breadcrumb__item"><%= bread_sec %></li>
+            <% } else { %>
+                <li class="breadcrumb__item"><a href="../../"><%= bread %></a></li>
+                <li class="breadcrumb__item"><a href="../"><%= bread_sec %></a></li>
+                <li class="breadcrumb__item"><%= bread_thi %></li>
+            <% } %>
+        </ul>
+    </div>
 </div>
 <% } %>
 
