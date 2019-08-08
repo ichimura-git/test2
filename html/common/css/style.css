@@ -311,7 +311,10 @@ img {
 .image-item {
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   /*display: inline-block;*/
+=======
+>>>>>>> 16a4accdba8de237b97719b5c71afbe1dbcc1c60
   margin-bottom: 0.2vh;
 }
 
@@ -530,6 +533,15 @@ img {
 .footer {
   background-color: #7AC943;
   padding-top: 20px;
+}
+
+.footer__list {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__item {
+  margin-right: 20px;
 }
 
 .footer__item > a {

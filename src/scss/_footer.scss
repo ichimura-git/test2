@@ -19,9 +19,17 @@
   padding-top: 20px;
 }
 
-.footer__item > a {
-  color: white;
-  font-size: 0.9rem;
+.footer__list {
+  display: flex;
+}
+
+
+.footer__item {
+  margin-right: 20px;
+  > a {
+    color: white;
+    font-size: 0.9rem;
+  }
 }
 
 .footer__copyright {
