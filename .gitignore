@@ -1,3 +1,4 @@
+.gitignore
 yarn.lock
 kaigishitsu02.iml
 kaigishitsu03.iml
@@ -7,4 +8,3 @@ html/contact/
 html/honma
 html/sapporo/contact/me_mailform/
 html/nagoya/contact/me_mailform/
-.gitignore
