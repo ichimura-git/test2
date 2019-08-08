@@ -532,6 +532,15 @@ img {
   padding-top: 20px;
 }
 
+.footer__list {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__item {
+  margin-right: 20px;
+}
+
 .footer__item > a {
   color: white;
   font-size: 0.9rem;
